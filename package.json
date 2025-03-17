@@ -9,6 +9,7 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/npm": "^7.19.3",
+    "html-react-parser": "^5.2.2",
     "lodash.debounce": "^4.0.8",
     "react": "^19.0.0",
     "react-day-picker": "^9.6.2",
@@ -16,6 +17,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.3.0",
     "react-scripts": "5.0.1",
+    "react-svg": "^16.3.0",
     "sass": "^1.85.1",
     "typescript": "^5.8.2",
     "web-vitals": "^2.1.4"
@@ -47,6 +49,7 @@
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.9",
     "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4"
+    "@types/react-dom": "^19.0.4",
+    "html-loader": "^5.1.0"
   }
 }

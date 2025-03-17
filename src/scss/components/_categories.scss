@@ -17,11 +17,10 @@
     height: 90px;
     gap: 45px;
     font-size: 15px;
-    img {
+    svg {
       width: 36px;
       height: 36px;
       margin-bottom: 17px;
-      opacity: 0.4;
     }
     .active {
       font-weight: 700;
@@ -29,10 +28,6 @@
       color: white;
       border-bottom: 2.21px solid rgba(255, 255, 255, 1);
       transition: all 0.2s ease-in-out;
-      img {
-        opacity: 1;
-        transition: opacity 0.4s ease-in-out;
-      }
     }
   }
 
@@ -45,7 +40,6 @@
     max-width: 95px;
     min-width: 70px;
     cursor: pointer;
-
     object {
       fill: white;
     }
