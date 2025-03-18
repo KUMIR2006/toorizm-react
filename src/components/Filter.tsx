@@ -12,8 +12,8 @@ const Filter = () => {
 
           <Search/>
          
-          <CheckIn/>
-          <CheckIn/>
+          <CheckIn check='in'/>
+          <CheckIn check='out'/>
           {/* <div className="checkOut-In">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
               <g opacity="0.7">

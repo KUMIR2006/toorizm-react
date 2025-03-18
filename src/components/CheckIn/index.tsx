@@ -1,12 +1,16 @@
 import React from 'react'
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
+import { ru } from "date-fns/locale/ru"
 
-import { format } from "date-fns";
-import { useDispatch, useSelector } from 'react-redux';
-import { setCheckIn } from '../../redux/filter/slice';
+import { useDispatch } from 'react-redux';
+import { setCheckIn, setCheckOut  } from '../../redux/filter/slice';
 
-const CheckIn: React.FC = () => {
+interface CheckInType {
+  check: string;
+}
+
+const CheckIn: React.FC<CheckInType> = ({check}) => {
   const dispatch = useDispatch()
   const [openCheckIn, setOpenCheckIn] = React.useState(false);
   const [selected, setSelected] = React.useState<Date>();
@@ -28,14 +32,18 @@ const CheckIn: React.FC = () => {
 
 
   React.useEffect(() => {
-    if (selected != undefined){
-      dispatch(setCheckIn (selected.toLocaleDateString('en-US')));
+    if (selected !== undefined){
+      check === "in" 
+      ? 
+      dispatch(setCheckIn (selected.toLocaleDateString('en-US')))
+      :
+      dispatch(setCheckOut (selected.toLocaleDateString('en-US')))
     }
 
   },[selected]);
 
   return (
-    <div ref={checkInRef} className="checkOut-In">
+    <div ref={checkInRef} className="checkOut-In" >
       <div className="checkOut-In__title" onClick={() => setOpenCheckIn(!openCheckIn)}>
         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
           <g opacity="0.7">
@@ -44,7 +52,11 @@ const CheckIn: React.FC = () => {
           </g>
         </svg>
 
-        <p>{selected === undefined ? "Дата заезда" : selected.toLocaleDateString('en-US')}</p>
+        <p>
+          {selected === undefined ? 
+             check === "in" ? 'Дата заезда' : 'Дата выезда'
+            : 
+            selected.toLocaleDateString('en-US')}</p>
       </div>
       {
         openCheckIn && (
@@ -54,9 +66,10 @@ const CheckIn: React.FC = () => {
               mode="single"
               selected={selected}
               onSelect={setSelected}
-              footer={
-                selected ? `Selected: ${selected.toLocaleDateString()}` : "Pick a day."
-              }
+              startMonth={new Date(2025, (new Date()).getMonth())} 
+              endMonth={new Date(2026, 12)}
+              locale={ru}
+              disabled={{ before: new Date() }}
             />
           </div>
         )
