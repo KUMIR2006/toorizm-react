@@ -5,7 +5,6 @@
 
   .search,
   .checkOut-In,
-  .touristsAmount,
   .search-button {
     display: flex;
     flex-direction: row;
@@ -91,17 +90,89 @@
   }
 }
 
+.touristsAmount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  color: rgb(228, 221, 220);
+  &--title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 49px;
+    width: 135px;
+    color: rgb(228, 221, 220);
+    cursor: pointer;
+    svg {
+      min-width: 23px;
+      min-height: 22px;
+    }
+  }
+}
+.touristsPicker {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(29, 29, 29, 1);
+  top: 80px;
+  padding: 9px 17px;
+  border-radius: 17.71px;
+  z-index: 10;
+  min-width: 200px;
+  gap: 25px;
+
+  li {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 42px;
+    height: 42px;
+  }
+
+  &__title {
+    z-index: 1;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+    border: 0;
+    height: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .children {
+    padding-left: 17px;
+  }
+
+  .activeTouristsPicker {
+    border: 2px solid rgb(38, 89, 195);
+    border-radius: 100%;
+  }
+}
+
 .dayPicker {
   position: absolute;
   background: rgba(29, 29, 29, 1);
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
   top: 80px;
   padding: 9px 17px;
   border-radius: 17.71px;
   opacity: 0.99;
   z-index: 10;
 }
+// daypicker active color
 .rdp-root {
   --rdp-accent-color: rgb(38, 89, 195);
 }

@@ -3,6 +3,6 @@ export interface FilterSliceState {
   categoryId: number;
   checkIn: string | null,
   checkOut: string | null,
-  childrenCount: number | null,
-  adultsCount: number | null,
+  childrenCount: number,
+  adultsCount: number,
 }

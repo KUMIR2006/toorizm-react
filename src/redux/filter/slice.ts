@@ -6,8 +6,8 @@ const initialState: FilterSliceState = {
   categoryId: 0,
   checkIn:null,
   checkOut:null,
-  childrenCount: null,
-  adultsCount: null,
+  childrenCount: 0,
+  adultsCount: 0,
 };
 
 
