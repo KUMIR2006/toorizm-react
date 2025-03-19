@@ -11,6 +11,7 @@ const MainLayout:React.FC = () => {
         <Header/>
         <Filter/>
         <Categories/>
+        <Outlet/>
         <Footer/>
       </div>)
 }
