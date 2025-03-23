@@ -38,7 +38,7 @@ const TourBlock: React.FC<Tour> = ({  imageUrl, destination, days, info, feature
             </ul>
             
             <ul className="tour__features">
-              <li>{features[0]}r</li>
+              <li>{features[0]}</li>
               <li>{features[1]}</li>
               <li>{features[2]}</li>
             </ul>

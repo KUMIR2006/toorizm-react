@@ -24,7 +24,7 @@ const Tours = () => {
 
     const adults = adultsCount !== 0 ? `&adultsCount=${adultsCount}` : ''
     const children = childrenCount !== 0 ? `&childrenCount=${childrenCount}` : ''
-    const category =  categoryId !== 0 ? `&category=${categoryId}` : ''
+    const category =  categoryId != null ? `&category=${categoryId}` : ''
     const search =  searchValue ? `&search=${searchValue}` : ''
 
 
