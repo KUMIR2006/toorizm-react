@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import filter from './filter/slice';
+import tour from './tour/slice';
 import { useDispatch } from 'react-redux';
 
 export const store = configureStore({
   reducer: {
     filter,
+    tour,
   },
 });
 

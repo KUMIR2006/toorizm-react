@@ -3,7 +3,7 @@ import { FilterSliceState } from './types';
 
 const initialState: FilterSliceState = {
   searchValue: '',
-  categoryId: 0,
+  categoryId: null,
   checkIn:null,
   checkOut:null,
   childrenCount: 0,
