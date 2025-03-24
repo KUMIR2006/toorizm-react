@@ -3,8 +3,9 @@ import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
 import { ru } from "date-fns/locale/ru"
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setCheckIn, setCheckOut  } from '../../redux/filter/slice';
+import { selectFilter } from '../../redux/filter/selectors';
 
 interface CheckInType {
   check: string;
@@ -15,7 +16,42 @@ const CheckIn: React.FC<CheckInType> = ({check}) => {
   const [openCheckIn, setOpenCheckIn] = React.useState(false);
   const [selected, setSelected] = React.useState<Date>();
   const checkInRef = React.useRef<HTMLDivElement>(null);
-  
+  const {checkIn,checkOut} = useSelector(selectFilter)
+
+  function activated(){
+    if(check==='in'){
+      if(checkIn!=null){
+        return checkIn
+      }else{
+        return undefined
+      }
+    }else{
+      if(checkOut!=null){
+        return checkOut
+      }else{
+        return undefined
+      }
+    }
+  }
+  function filterToursByDate(dateCheck: Date){
+    if(check==='in'){
+      if(checkOut!=null && dateCheck>checkOut){
+        dispatch(setCheckIn(dateCheck))
+        dispatch(setCheckOut(dateCheck))
+      }else{
+        dispatch(setCheckIn(dateCheck))
+      }
+    }else{
+      if(checkIn!=null && dateCheck<checkIn){
+        dispatch(setCheckOut(dateCheck))
+        dispatch(setCheckIn(dateCheck))
+      }else{
+        dispatch(setCheckOut(dateCheck))
+      }
+    }
+    
+  }
+
   React.useEffect(() => {
     const handleClickOutside =( (event: MouseEvent) => {
       const path = (event.composedPath());
@@ -33,11 +69,7 @@ const CheckIn: React.FC<CheckInType> = ({check}) => {
 
   React.useEffect(() => {
     if (selected !== undefined){
-      check === "in" 
-      ? 
-      dispatch(setCheckIn (selected.toLocaleDateString('en-US')))
-      :
-      dispatch(setCheckOut (selected.toLocaleDateString('en-US')))
+      filterToursByDate(selected)
     }
 
   },[selected]);
@@ -54,9 +86,15 @@ const CheckIn: React.FC<CheckInType> = ({check}) => {
 
         <p>
           {selected === undefined ? 
-             check === "in" ? 'Дата заезда' : 'Дата выезда'
+            check === "in" ? 'Дата заезда' : 'Дата выезда'
             : 
-            selected.toLocaleDateString('en-US')}</p>
+            check === "in" 
+              ? 
+              checkIn!==null ? checkIn.toLocaleDateString('en-US') : ''
+              :
+              checkOut!==null ? checkOut.toLocaleDateString('en-US') : ''
+            
+            }</p>
       </div>
       {
         openCheckIn && (
@@ -64,7 +102,7 @@ const CheckIn: React.FC<CheckInType> = ({check}) => {
             <DayPicker
               animate
               mode="single"
-              selected={selected}
+              selected={activated()}
               onSelect={setSelected}
               startMonth={new Date(2025, (new Date()).getMonth())} 
               endMonth={new Date(2026, 12)}

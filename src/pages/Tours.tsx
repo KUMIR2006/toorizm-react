@@ -7,6 +7,7 @@ import { fetchTours } from '../redux/tour/asyncActions';
 
 import TourBlock from '../components/TourBlock'
 import { selectToursData } from '../redux/tour/selectors';
+import { Tour } from '../redux/tour/types';
 
 const Tours = () => {
   const dispatch = useAppDispatch()
@@ -20,6 +21,37 @@ const Tours = () => {
   } = useSelector(selectFilter)
   const { items, status } = useSelector(selectToursData)
 
+
+  const parseDate = (dateString: string): Date => {
+    const [month, day, year] = dateString.split('/').map(Number);
+    return new Date(year, month - 1, day);
+  };
+
+  // Функция фильтрации
+  const filterToursByDate = (): Tour[] => {
+    return items.filter(tour => {
+      const tourEntry = parseDate(tour.dateEntry);
+      const tourExit = parseDate(tour.dateExit);
+
+      // Проверяем, что период тура полностью входит в выбранный диапазон
+      if (checkIn!=null && checkOut!=null){
+        return tourEntry >= checkIn && tourExit <= checkOut;
+      }
+      else if (checkIn!=null && checkOut==null) {
+        return tourEntry >= checkIn;
+      }
+      else if (checkIn==null && checkOut!=null) {
+        return tourExit <= checkOut;
+      }
+      else {
+        return checkOut===checkIn
+      }
+
+
+    });
+  };
+
+  // Получаем данные о турах
   const getTours = async () => {
 
     const adults = adultsCount !== 0 ? `&adultsCount=${adultsCount}` : ''
@@ -37,6 +69,11 @@ const Tours = () => {
     }))
 }
 
+
+// Фильтруем по дате
+const filteredTours = filterToursByDate();
+
+
 React.useEffect(() => {
   getTours();
 }, [adultsCount, childrenCount, searchValue, categoryId])
@@ -47,7 +84,7 @@ React.useEffect(() => {
         <div className="tours__title">Туры</div>
         <div className="tours__inner">
           {          
-            items.map((obj, i) => 
+            filteredTours.map((obj, i) => 
               <TourBlock
                 key={i} 
                 {...obj}

@@ -1,8 +1,8 @@
 export interface FilterSliceState {
   searchValue: string;
   categoryId: number | null;
-  checkIn: string | null,
-  checkOut: string | null,
+  checkIn: Date | null,
+  checkOut: Date | null,
   childrenCount: number,
   adultsCount: number,
 }

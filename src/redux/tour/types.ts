@@ -10,6 +10,8 @@ export type Tour = {
   rating: number;
   adultsCount: number;
   childrenCount: number;
+  dateEntry: string;
+  dateExit: string;
   // "imageUrl": "",
   //   "destination": "Швейцарские Альпы",
   //   "days": 3,
