@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 90px;
+    gap: 30px;
   }
   &__title {
     font-family: Helvetica;
@@ -18,8 +18,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 378px;
-    height: 610px;
+    width: 405px;
+    height: 640px;
     border-radius: 17px;
     padding: 17px 17px 26px;
     background: rgba(255, 255, 255, 1);
@@ -27,8 +27,8 @@
     box-shadow: 0px 4px 17px 0px rgba(158, 158, 158, 0.25);
 
     &__img {
-      width: 343px;
-      height: 221px;
+      width: 371px;
+      height: 251px;
       border-radius: 8.86px;
     }
     &__title {
@@ -74,6 +74,7 @@
         align-items: center;
         min-width: 56px;
         gap: 8.86px;
+        font-size: 15px;
         img {
           width: 26px;
           height: 26px;

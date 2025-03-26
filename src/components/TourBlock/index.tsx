@@ -46,7 +46,7 @@ const TourBlock: React.FC<Tour> = ({  imageUrl, destination, days, info, feature
 
             <div className="tour__price">
               
-              <p>₹{price}</p>
+              <p>₽{price}</p>
               <div className="tour__price--desc">
                 Per person
               </div>
