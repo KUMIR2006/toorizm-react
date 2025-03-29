@@ -8,8 +8,9 @@ import { fetchTours } from '../redux/tour/asyncActions';
 import TourBlock from '../components/TourBlock'
 import { selectToursData } from '../redux/tour/selectors';
 import { Tour } from '../redux/tour/types';
+import Skeleton from '../components/TourBlock/Skeleton';
 
-const Tours = () => {
+const Tours:React.FC = () => {
   const dispatch = useAppDispatch()
   const {
     categoryId, 
@@ -20,7 +21,7 @@ const Tours = () => {
     adultsCount 
   } = useSelector(selectFilter)
   const { items, status } = useSelector(selectToursData)
-
+  
 
   const parseDate = (dateString: string): Date => {
     const [month, day, year] = dateString.split('/').map(Number);
@@ -78,19 +79,39 @@ React.useEffect(() => {
   getTours();
 }, [adultsCount, childrenCount, searchValue, categoryId])
 
+
+const tours = (!filteredTours || !filteredTours.length) ? 
+                <div className="error-info">
+                  <h2>Произошла ошибка</h2>
+                  <p>Туры с указанными вами условиями не найдены. Попробуйте поменять критерии</p>
+                </div>
+                :
+                <div className="tours__inner">
+                  {filteredTours.map((obj, i) =><TourBlock key={i} {...obj} />)  }
+                </div>
+  
+const bones = <div className="tours__inner">
+                  {[...new Array(3)].map((_, index) =><Skeleton key={index}/>)}
+              </div> 
+
   return (
     <div className="container">
       <div className='tours'>
         <div className="tours__title">Туры</div>
-        <div className="tours__inner">
-          {          
-            filteredTours.map((obj, i) => 
-              <TourBlock
-                key={i} 
-                {...obj}
-              />)
+          {
+            status === 'error' ? 
+            (<div className="error-info">
+              <h2>Произошла ошибка</h2>
+              <p>К сожалению, не удалось получить данные по турам. Попробуйте повторить попытку позже</p>
+            </div>) 
+            : 
+            (<>
+              {status === 'loading'
+                ? bones
+                : tours
+              }
+            </>)
           }
-        </div>
       </div>
     </div>
     
