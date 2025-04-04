@@ -1,120 +1,13 @@
 [
   {
-    "city": "Швейцарские Альпы",
-    "imageUrl": "",
-    "destination": "Швейцарские Альпы",
-    "days": 3,
+    "city": "Йеллоустоун, США",
+    "imageUrl": "https://images.unsplash.com/photo-1622737133809-d95047b9e673",
+    "destination": "Кемпинг в Йеллоустоуне",
+    "days": 5,
     "category": [
-      2,
-      8
-    ],
-    "info": [
-      2,
-      1,
-      2,
+      7,
+      3,
       4
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Обзорная экскурсия по городу",
-      "Любопытный уголок"
-    ],
-    "price": 88952,
-    "rating": 4.7,
-    "adultsCount": 2,
-    "childrenCount": 1,
-    "dateEntry": "3/15/2025",
-    "dateExit": "3/18/2025"
-  },
-  {
-    "city": "Париж",
-    "imageUrl": "",
-    "destination": "Парижский вояж",
-    "days": 3,
-    "category": [
-      3,
-      7
-    ],
-    "info": [
-      2,
-      1,
-      3,
-      5
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Экскурсия по Эйфелевой башне",
-      "Посещение Лувра"
-    ],
-    "price": 102500,
-    "rating": 4.7,
-    "adultsCount": 3,
-    "childrenCount": 0,
-    "dateEntry": "4/20/2025",
-    "dateExit": "4/23/2025"
-  },
-  {
-    "city": "Италия",
-    "imageUrl": "",
-    "destination": "Итальянские каникулы",
-    "days": 3,
-    "category": [
-      3,
-      0
-    ],
-    "info": [
-      2,
-      1,
-      3,
-      6
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Экскурсия по Колизею",
-      "Дегустация вин в Тоскане"
-    ],
-    "price": 115000,
-    "rating": 4.7,
-    "adultsCount": 2,
-    "childrenCount": 2,
-    "dateEntry": "5/10/2025",
-    "dateExit": "5/13/2025"
-  },
-  {
-    "city": "Испания",
-    "imageUrl": "",
-    "destination": "Испанское приключение",
-    "days": 3,
-    "category": [
-      3,
-      0
-    ],
-    "info": [
-      2,
-      1,
-      2,
-      5
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Посещение Саграды Фамилии",
-      "Фламенко шоу"
-    ],
-    "price": 95000,
-    "rating": 4.7,
-    "adultsCount": 4,
-    "childrenCount": 1,
-    "dateEntry": "6/1/2025",
-    "dateExit": "6/4/2025"
-  },
-  {
-    "city": "Греция",
-    "imageUrl": "",
-    "destination": "Греческие острова",
-    "days": 3,
-    "category": [
-      0,
-      9
     ],
     "info": [
       2,
@@ -123,149 +16,1181 @@
       7
     ],
     "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Экскурсия по Акрополю",
-      "Круиз по островам"
+      "Тур комбо с арендой кемпера",
+      "Походы к гейзерам",
+      "Наблюдение за бизонами"
     ],
-    "price": 125000,
+    "price": 120000,
     "rating": 4.7,
     "adultsCount": 3,
     "childrenCount": 2,
-    "dateEntry": "7/5/2025",
-    "dateExit": "7/8/2025"
+    "dateEntry": "8/15/2025",
+    "dateExit": "8/20/2025"
   },
   {
-    "city": "Австрийские Альпы",
-    "imageUrl": "",
-    "destination": "Австрийские Альпы",
-    "days": 3,
-    "category": [
-      2,
-      8
-    ],
-    "info": [
-      2,
-      1,
-      2,
-      4
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Катание на лыжах",
-      "Посещение Зальцбурга"
-    ],
-    "price": 90000,
-    "rating": 4.7,
-    "adultsCount": 2,
-    "childrenCount": 1,
-    "dateEntry": "8/10/2025",
-    "dateExit": "8/13/2025"
-  },
-  {
-    "city": "Прага, Чехия",
-    "destination": "Чешская сказка",
-    "days": 4,
-    "category": [
-      7,
-      5
-    ],
-    "info": [
-      2,
-      1,
-      3,
-      5
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Экскурсия по Пражскому граду",
-      "Дегустация пива"
-    ],
-    "price": 88000,
-    "rating": 4.7,
-    "adultsCount": 2,
-    "childrenCount": 0,
-    "dateEntry": "9/15/2025",
-    "dateExit": "9/19/2025"
-  },
-  {
-    "city": "Норвежские фьорды",
-    "imageUrl": "",
-    "destination": "Норвежские фьорды",
-    "days": 5,
-    "category": [
-      2,
-      4
-    ],
-    "info": [
-      2,
-      1,
-      3,
-      6
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Круиз по фьордам",
-      "Посещение Бергена"
-    ],
-    "price": 130000,
-    "rating": 4.7,
-    "adultsCount": 3,
-    "childrenCount": 1,
-    "dateEntry": "10/20/2025",
-    "dateExit": "10/25/2025"
-  },
-  {
-    "city": "Турция",
-    "imageUrl": "",
-    "destination": "Турецкое побережье",
-    "days": 6,
-    "category": [
-      0,
-      1
-    ],
-    "info": [
-      2,
-      1,
-      2,
-      5
-    ],
-    "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Экскурсия по Стамбулу",
-      "Отдых на пляже"
-    ],
-    "price": 75000,
-    "rating": 4.7,
-    "adultsCount": 4,
-    "childrenCount": 1,
-    "dateEntry": "11/26/2025",
-    "dateExit": "12/2/2025"
-  },
-  {
-    "city": "Япония",
-    "imageUrl": "",
-    "destination": "Японские традиции",
+    "city": "Бали, Индонезия",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+    "destination": "Отдых на пляжах Бали",
     "days": 7,
     "category": [
-      3,
+      1,
       9
     ],
     "info": [
+      1,
+      3,
+      6,
+      7
+    ],
+    "features": [
+      "Вилы с видом на океан",
+      "Дайвинг у коралловых рифов",
+      "Экскурсии в джунгли"
+    ],
+    "price": 180000,
+    "rating": 4.9,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "7/10/2025",
+    "dateExit": "7/17/2025"
+  },
+  {
+    "city": "Шамони, Франция",
+    "imageUrl": "https://images.unsplash.com/photo-1605540436563-5bca919ae766",
+    "destination": "Горнолыжный курорт",
+    "days": 6,
+    "category": [
+      3,
+      10
+    ],
+    "info": [
       2,
+      8
+    ],
+    "features": [
+      "Ски-пасс на все подъемники",
+      "Катание на сноуборде",
+      "Термальные источники"
+    ],
+    "price": 210000,
+    "rating": 4.8,
+    "adultsCount": 4,
+    "childrenCount": 1,
+    "dateEntry": "12/20/2025",
+    "dateExit": "12/26/2025"
+  },
+  {
+    "city": "Дубай, ОАЭ",
+    "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+    "destination": "Пустынное сафари",
+    "days": 4,
+    "category": [
+      2,
+      4
+    ],
+    "info": [
+      2,
+      6
+    ],
+    "features": [
+      "Гонки на дюнах",
+      "Ужин в бедуинском стиле",
+      "Катание на верблюдах"
+    ],
+    "price": 95000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "11/5/2025",
+    "dateExit": "11/9/2025"
+  },
+  {
+    "city": "Кейптаун, ЮАР",
+    "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+    "destination": "Тур по мысу Доброй Надежды",
+    "days": 8,
+    "category": [
+      4,
+      3
+    ],
+    "info": [
+      1,
+      2,
+      4
+    ],
+    "features": [
+      "Винные дегустации",
+      "Восхождение на Столовую гору",
+      "Экскурсия к пингвинам"
+    ],
+    "price": 220000,
+    "rating": 4.6,
+    "adultsCount": 3,
+    "childrenCount": 2,
+    "dateEntry": "9/1/2025",
+    "dateExit": "9/9/2025"
+  },
+  {
+    "city": "Мальдивы",
+    "imageUrl": "https://images.unsplash.com/photo-1578932750355-5eb30ece487a",
+    "destination": "Отдых в бунгало над водой",
+    "days": 6,
+    "category": [
+      1,
+      5,
+      9
+    ],
+    "info": [
+      1,
+      3,
+      6,
+      7
+    ],
+    "features": [
+      "Дайвинг с мантами",
+      "Ужин при свечах на пляже",
+      "SPA-процедуры"
+    ],
+    "price": 350000,
+    "rating": 4.9,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "5/15/2025",
+    "dateExit": "5/21/2025"
+  },
+  {
+    "city": "Альпы, Швейцария",
+    "imageUrl": "https://images.unsplash.com/photo-1517825738774-7de9363ef735",
+    "destination": "Поход по Швейцарским Альпам",
+    "days": 7,
+    "category": [
+      3,
+      7
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Ночевки в горных хижинах",
+      "Фотоохоты на серн",
+      "Спуск на параплане"
+    ],
+    "price": 190000,
+    "rating": 4.7,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "7/5/2025",
+    "dateExit": "7/12/2025"
+  },
+  {
+    "city": "Прага, Чехия",
+    "imageUrl": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf",
+    "destination": "Тур по старинным замкам",
+    "days": 5,
+    "category": [
+      8,
+      4
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Экскурсия в Пражский Град",
+      "Дегустация чешского пива",
+      "Прогулка по Карлову мосту"
+    ],
+    "price": 110000,
+    "rating": 4.4,
+    "adultsCount": 4,
+    "childrenCount": 1,
+    "dateEntry": "6/10/2025",
+    "dateExit": "6/15/2025"
+  },
+  {
+    "city": "Канкун, Мексика",
+    "imageUrl": "https://images.unsplash.com/photo-1501612780327-45045538702b",
+    "destination": "Пляжный отдых в Мексике",
+    "days": 7,
+    "category": [
+      1,
+      9
+    ],
+    "info": [
+      1,
+      7
+    ],
+    "features": [
+      "Экскурсия к пирамидам майя",
+      "Сноркелинг в сенотах",
+      "Вечеринки на пляже"
+    ],
+    "price": 170000,
+    "rating": 4.6,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "8/1/2025",
+    "dateExit": "8/8/2025"
+  },
+  {
+    "city": "Киото, Япония",
+    "imageUrl": "https://images.unsplash.com/photo-1492571350019-22de08371fd3",
+    "destination": "Традиционная Япония",
+    "days": 6,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Чайная церемония",
+      "Посещение храма Фусими Инари",
+      "Прогулка по бамбуковому лесу"
+    ],
+    "price": 200000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 1,
+    "dateEntry": "4/15/2025",
+    "dateExit": "4/21/2025"
+  },
+  {
+    "city": "Рейкьявик, Исландия",
+    "imageUrl": "https://images.unsplash.com/photo-1498673394965-85cb14905c89",
+    "destination": "Тур по Исландии",
+    "days": 7,
+    "category": [
+      3,
+      4,
+      7
+    ],
+    "info": [
+      2,
+      4,
+      8
+    ],
+    "features": [
+      "Посещение Голубой лагуны",
+      "Экскурсия к водопаду Скоугафосс",
+      "Охота за северным сиянием"
+    ],
+    "price": 250000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "10/1/2025",
+    "dateExit": "10/8/2025"
+  },
+  {
+    "city": "Санторини, Греция",
+    "imageUrl": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d",
+    "destination": "Отдых на Санторини",
+    "days": 5,
+    "category": [
+      1,
+      4,
+      6
+    ],
+    "info": [
+      1,
+      3,
+      7
+    ],
+    "features": [
+      "Проживание в отеле с видом на кальдеру",
+      "Экскурсия в древнюю Тиру",
+      "Дегустация греческого вина"
+    ],
+    "price": 200000,
+    "rating": 4.9,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "6/5/2025",
+    "dateExit": "6/10/2025"
+  },
+  {
+    "city": "Банф, Канада",
+    "imageUrl": "https://images.unsplash.com/photo-1500581276021-a4bbcd0050c5",
+    "destination": "Кемпинг в Канадских Скалистых горах",
+    "days": 6,
+    "category": [
+      3,
+      7
+    ],
+    "info": [
+      2,
+      4,
+      7
+    ],
+    "features": [
+      "Поход к озеру Луиз",
+      "Сплав по горной реке",
+      "Наблюдение за медведями"
+    ],
+    "price": 180000,
+    "rating": 4.7,
+    "adultsCount": 3,
+    "childrenCount": 1,
+    "dateEntry": "7/15/2025",
+    "dateExit": "7/21/2025"
+  },
+  {
+    "city": "Мачу-Пикчу, Перу",
+    "imageUrl": "https://images.unsplash.com/photo-1526397751294-331021109fbd",
+    "destination": "Треккинг к Мачу-Пикчу",
+    "days": 8,
+    "category": [
+      3,
+      4
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Путь инков до затерянного города",
+      "Ночевка в горах",
+      "Экскурсия с гидом"
+    ],
+    "price": 220000,
+    "rating": 4.8,
+    "adultsCount": 4,
+    "childrenCount": 0,
+    "dateEntry": "5/1/2025",
+    "dateExit": "5/9/2025"
+  },
+  {
+    "city": "Занзибар, Танзания",
+    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+    "destination": "Пляжный отдых на Занзибаре",
+    "days": 7,
+    "category": [
+      1,
+      9
+    ],
+    "info": [
+      1,
+      6,
+      7
+    ],
+    "features": [
+      "Дайвинг у коралловых рифов",
+      "Экскурсия на плантации специй",
+      "Ужин на пляже"
+    ],
+    "price": 190000,
+    "rating": 4.6,
+    "adultsCount": 2,
+    "childrenCount": 2,
+    "dateEntry": "8/10/2025",
+    "dateExit": "8/17/2025"
+  },
+  {
+    "city": "Лапландия, Финляндия",
+    "imageUrl": "https://images.unsplash.com/photo-1517760444937-f6397edcbbcd",
+    "destination": "Зимняя сказка в Лапландии",
+    "days": 5,
+    "category": [
+      8,
+      10
+    ],
+    "info": [
+      1,
+      8
+    ],
+    "features": [
+      "Катание на оленьих упряжках",
+      "Посещение деревни Санта-Клауса",
+      "Ночлег в стеклянном иглу"
+    ],
+    "price": 230000,
+    "rating": 4.9,
+    "adultsCount": 2,
+    "childrenCount": 3,
+    "dateEntry": "12/10/2025",
+    "dateExit": "12/15/2025"
+  },
+  {
+    "city": "Кейптаун, ЮАР",
+    "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+    "destination": "Сафари в Крюгер-парке",
+    "days": 6,
+    "category": [
+      4,
+      2
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Сафари на джипах",
+      "Наблюдение за большой пятеркой",
+      "Проживание в лодже"
+    ],
+    "price": 240000,
+    "rating": 4.7,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "9/5/2025",
+    "dateExit": "9/11/2025"
+  },
+  {
+    "city": "Амстердам, Нидерланды",
+    "imageUrl": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4",
+    "destination": "Тур по каналам Амстердама",
+    "days": 4,
+    "category": [
+      5,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Прогулка на лодке по каналам",
+      "Экскурсия в музей Ван Гога",
+      "Велосипедный тур"
+    ],
+    "price": 130000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "4/20/2025",
+    "dateExit": "4/24/2025"
+  },
+  {
+    "city": "Сием Рип, Камбоджа",
+    "imageUrl": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a",
+    "destination": "Храмы Ангкор-Вата",
+    "days": 5,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      2
+    ],
+    "features": [
+      "Экскурсия в Ангкор-Ват",
+      "Посещение храма Байон",
+      "Прогулка по озеру Тонлесап"
+    ],
+    "price": 110000,
+    "rating": 4.4,
+    "adultsCount": 2,
+    "childrenCount": 1,
+    "dateEntry": "3/15/2025",
+    "dateExit": "3/20/2025"
+  },
+  {
+    "city": "Нью-Йорк, США",
+    "imageUrl": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+    "destination": "Городское путешествие",
+    "days": 6,
+    "category": [
+      4,
+      5
+    ],
+    "info": [
+      5
+    ],
+    "features": [
+      "Экскурсия на Статую Свободы",
+      "Посещение Таймс-сквер",
+      "Прогулка по Центральному парку"
+    ],
+    "price": 210000,
+    "rating": 4.6,
+    "adultsCount": 3,
+    "childrenCount": 2,
+    "dateEntry": "6/1/2025",
+    "dateExit": "6/7/2025"
+  },
+  {
+    "city": "Бора-Бора, Французская Полинезия",
+    "imageUrl": "https://images.unsplash.com/photo-1578948856697-db91d246b7b1",
+    "destination": "Райский отдых на Бора-Бора",
+    "days": 7,
+    "category": [
+      1,
+      5,
+      9
+    ],
+    "info": [
+      1,
+      3,
+      6,
+      7
+    ],
+    "features": [
+      "Бунгало над водой",
+      "Дайвинг с акулами",
+      "Романтический ужин на пляже"
+    ],
+    "price": 400000,
+    "rating": 5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "7/20/2025",
+    "dateExit": "7/27/2025"
+  },
+  {
+    "city": "Каньон Антилопы, США",
+    "imageUrl": "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
+    "destination": "Фототур по каньону",
+    "days": 3,
+    "category": [
+      2,
+      4
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Прогулка по каньону",
+      "Фотосессия с гидом",
+      "Экскурсия к Horseshoe Bend"
+    ],
+    "price": 90000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "5/10/2025",
+    "dateExit": "5/13/2025"
+  },
+  {
+    "city": "Паттайя, Таиланд",
+    "imageUrl": "https://images.unsplash.com/photo-1528181304800-259b08848526",
+    "destination": "Отдых в Паттайе",
+    "days": 6,
+    "category": [
+      1,
+      5
+    ],
+    "info": [
+      1,
+      7
+    ],
+    "features": [
+      "Экскурсия на остров Ко Лан",
+      "Шоппинг на ночном рынке",
+      "Шоу трансвеститов"
+    ],
+    "price": 120000,
+    "rating": 4.3,
+    "adultsCount": 3,
+    "childrenCount": 1,
+    "dateEntry": "6/15/2025",
+    "dateExit": "6/21/2025"
+  },
+  {
+    "city": "Венеция, Италия",
+    "imageUrl": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0",
+    "destination": "Романтический тур по Венеции",
+    "days": 4,
+    "category": [
+      5,
+      6
+    ],
+    "info": [
+      3,
+      5
+    ],
+    "features": [
+      "Прогулка на гондоле",
+      "Экскурсия в Дворец дожей",
+      "Ужин в ресторане на воде"
+    ],
+    "price": 180000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "9/1/2025",
+    "dateExit": "9/5/2025"
+  },
+  {
+    "city": "Серенгети, Танзания",
+    "imageUrl": "https://images.unsplash.com/photo-1566438480900-0609be27a4be",
+    "destination": "Сафари в Серенгети",
+    "days": 7,
+    "category": [
+      2,
+      4
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Сафари на джипах",
+      "Наблюдение за миграцией зебр",
+      "Проживание в кемпинге"
+    ],
+    "price": 280000,
+    "rating": 4.9,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "8/5/2025",
+    "dateExit": "8/12/2025"
+  },
+  {
+    "city": "Рио-де-Жанейро, Бразилия",
+    "imageUrl": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325",
+    "destination": "Карнавал в Рио",
+    "days": 5,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      5,
+      7
+    ],
+    "features": [
+      "Посещение карнавала",
+      "Подъем на статую Христа",
+      "Пляж Копакабана"
+    ],
+    "price": 190000,
+    "rating": 4.7,
+    "adultsCount": 4,
+    "childrenCount": 0,
+    "dateEntry": "2/20/2025",
+    "dateExit": "2/25/2025"
+  },
+  {
+    "city": "Дубровник, Хорватия",
+    "imageUrl": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be",
+    "destination": "Тур по Дубровнику",
+    "days": 5,
+    "category": [
+      4,
+      6,
+      8
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Экскурсия по Старому городу",
+      "Катание на яхте",
+      "Посещение острова Локрум"
+    ],
+    "price": 150000,
+    "rating": 4.6,
+    "adultsCount": 2,
+    "childrenCount": 1,
+    "dateEntry": "7/5/2025",
+    "dateExit": "7/10/2025"
+  },
+  {
+    "city": "Гранд-Каньон, США",
+    "imageUrl": "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
+    "destination": "Тур по Гранд-Каньону",
+    "days": 4,
+    "category": [
+      2,
+      4
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Пеший поход по каньону",
+      "Вертолетная экскурсия",
+      "Кемпинг под звездами"
+    ],
+    "price": 140000,
+    "rating": 4.7,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "6/10/2025",
+    "dateExit": "6/14/2025"
+  },
+  {
+    "city": "Стокгольм, Швеция",
+    "imageUrl": "https://images.unsplash.com/photo-1510218830377-2e994ea9087d",
+    "destination": "Скандинавский тур",
+    "days": 5,
+    "category": [
+      6,
+      8
+    ],
+    "info": [
       1,
       5,
       8
     ],
     "features": [
-      "Тур комбо с трансфером из аэропорта",
-      "Экскурсия по Токио",
-      "Посещение храма Фусими Инари"
+      "Экскурсия по Старому городу",
+      "Посещение музея Васа",
+      "Прогулка на пароме по архипелагу"
+    ],
+    "price": 160000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 1,
+    "dateEntry": "5/15/2025",
+    "dateExit": "5/20/2025"
+  },
+  {
+    "city": "Барселона, Испания",
+    "imageUrl": "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216",
+    "destination": "Архитектурный тур",
+    "days": 6,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Экскурсия по Саграда Фамилия",
+      "Прогулка по парку Гуэль",
+      "Пляж Барселонета"
+    ],
+    "price": 170000,
+    "rating": 4.6,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "8/10/2025",
+    "dateExit": "8/16/2025"
+  },
+  {
+    "city": "Токио, Япония",
+    "imageUrl": "https://images.unsplash.com/photo-1492571350019-22de08371fd3",
+    "destination": "Гастрономический тур",
+    "days": 7,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Дегустация суши",
+      "Экскурсия в Акихабару",
+      "Посещение храма Мэйдзи"
+    ],
+    "price": 230000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "4/1/2025",
+    "dateExit": "4/8/2025"
+  },
+  {
+    "city": "Кейптаун, ЮАР",
+    "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+    "destination": "Винный тур",
+    "days": 5,
+    "category": [
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Дегустация вин в Стелленбосе",
+      "Экскурсия на мыс Доброй Надежды",
+      "Ужин с видом на океан"
     ],
     "price": 150000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "10/5/2025",
+    "dateExit": "10/10/2025"
+  },
+  {
+    "city": "Сидней, Австралия",
+    "imageUrl": "https://images.unsplash.com/photo-1523428096881-5bd79d043006",
+    "destination": "Тур по Сиднею",
+    "days": 6,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Экскурсия в Сиднейский оперный театр",
+      "Подъем на мост Харбор-Бридж",
+      "Пляж Бонди"
+    ],
+    "price": 200000,
     "rating": 4.7,
+    "adultsCount": 3,
+    "childrenCount": 1,
+    "dateEntry": "11/1/2025",
+    "dateExit": "11/7/2025"
+  },
+  {
+    "city": "Кито, Эквадор",
+    "imageUrl": "https://images.unsplash.com/photo-1582979782613-6745a0a44a0b",
+    "destination": "Тур на Галапагосы",
+    "days": 8,
+    "category": [
+      1,
+      4,
+      9
+    ],
+    "info": [
+      1,
+      2,
+      6
+    ],
+    "features": [
+      "Дайвинг с морскими львами",
+      "Экскурсия к вулканам",
+      "Наблюдение за гигантскими черепахами"
+    ],
+    "price": 300000,
+    "rating": 4.9,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "7/1/2025",
+    "dateExit": "7/9/2025"
+  },
+  {
+    "city": "Лиссабон, Португалия",
+    "imageUrl": "https://images.unsplash.com/photo-1585338927000-1e7871a0d308",
+    "destination": "Тур по Лиссабону",
+    "days": 5,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Экскурсия в замок Святого Георгия",
+      "Дегустация портвейна",
+      "Прогулка на трамвае №28"
+    ],
+    "price": 140000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "6/5/2025",
+    "dateExit": "6/10/2025"
+  },
+  {
+    "city": "Каир, Египет",
+    "imageUrl": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368",
+    "destination": "Тур к пирамидам",
+    "days": 6,
+    "category": [
+      2,
+      4
+    ],
+    "info": [
+      1,
+      2
+    ],
+    "features": [
+      "Экскурсия к пирамидам Гизы",
+      "Посещение Каирского музея",
+      "Круиз по Нилу"
+    ],
+    "price": 130000,
+    "rating": 4.4,
+    "adultsCount": 3,
+    "childrenCount": 1,
+    "dateEntry": "3/10/2025",
+    "dateExit": "3/16/2025"
+  },
+  {
+    "city": "Осло, Норвегия",
+    "imageUrl": "https://images.unsplash.com/photo-1510218830377-2e994ea9087d",
+    "destination": "Фьорды Норвегии",
+    "days": 7,
+    "category": [
+      3,
+      4
+    ],
+    "info": [
+      2,
+      4,
+      8
+    ],
+    "features": [
+      "Круиз по фьордам",
+      "Экскурсия в музей кораблей викингов",
+      "Фотоохота на северное сияние"
+    ],
+    "price": 240000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "9/15/2025",
+    "dateExit": "9/22/2025"
+  },
+  {
+    "city": "Хельсинки, Финляндия",
+    "imageUrl": "https://images.unsplash.com/photo-1517760444937-f6397edcbbcd",
+    "destination": "Зимний тур",
+    "days": 5,
+    "category": [
+      6,
+      10
+    ],
+    "info": [
+      1,
+      8
+    ],
+    "features": [
+      "Посещение крепости Суоменлинна",
+      "Катание на санях с хаски",
+      "Экскурсия в ледяной бар"
+    ],
+    "price": 170000,
+    "rating": 4.5,
     "adultsCount": 2,
     "childrenCount": 2,
-    "dateEntry": "1/5/2026",
-    "dateExit": "1/12/2026"
+    "dateEntry": "12/5/2025",
+    "dateExit": "12/10/2025"
+  },
+  {
+    "city": "Вена, Австрия",
+    "imageUrl": "https://images.unsplash.com/photo-1516550893923-42d28e5677af",
+    "destination": "Культурный тур",
+    "days": 5,
+    "category": [
+      4,
+      6,
+      8
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Экскурсия в Шенбрунн",
+      "Концерт классической музыки",
+      "Дегустация штруделя"
+    ],
+    "price": 160000,
+    "rating": 4.6,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "5/20/2025",
+    "dateExit": "5/25/2025"
+  },
+  {
+    "city": "Будапешт, Венгрия",
+    "imageUrl": "https://images.unsplash.com/photo-1551867633-194f125bddfa",
+    "destination": "Термальные источники",
+    "days": 4,
+    "category": [
+      6
+    ],
+    "info": [
+      1,
+      3
+    ],
+    "features": [
+      "Посещение купален Сечени",
+      "Прогулка по Дунаю",
+      "Экскурсия в Будайскую крепость"
+    ],
+    "price": 120000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "4/10/2025",
+    "dateExit": "4/14/2025"
+  },
+  {
+    "city": "Пекин, Китай",
+    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b",
+    "destination": "Великая Китайская стена",
+    "days": 6,
+    "category": [
+      4
+    ],
+    "info": [
+      1,
+      2
+    ],
+    "features": [
+      "Экскурсия на Великую стену",
+      "Посещение Запретного города",
+      "Дегустация утки по-пекински"
+    ],
+    "price": 180000,
+    "rating": 4.6,
+    "adultsCount": 3,
+    "childrenCount": 1,
+    "dateEntry": "6/15/2025",
+    "dateExit": "6/21/2025"
+  },
+  {
+    "city": "Сеул, Южная Корея",
+    "imageUrl": "https://images.unsplash.com/photo-1538485399081-7a8974308c90",
+    "destination": "Гастротур по Корее",
+    "days": 5,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Дегустация корейских блюд",
+      "Экскурсия в дворец Кёнбоккун",
+      "Шоппинг в Мёндоне"
+    ],
+    "price": 170000,
+    "rating": 4.5,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "7/10/2025",
+    "dateExit": "7/15/2025"
+  },
+  {
+    "city": "Сингапур",
+    "imageUrl": "https://images.unsplash.com/photo-1525624213420-81a6845a5b8a",
+    "destination": "Футуристический город",
+    "days": 5,
+    "category": [
+      4,
+      5
+    ],
+    "info": [
+      1,
+      5
+    ],
+    "features": [
+      "Прогулка по Gardens by the Bay",
+      "Экскурсия в Marina Bay Sands",
+      "Ужин в ресторане на высоте"
+    ],
+    "price": 220000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 1,
+    "dateEntry": "8/5/2025",
+    "dateExit": "8/10/2025"
+  },
+  {
+    "city": "Ханой, Вьетнам",
+    "imageUrl": "https://images.unsplash.com/photo-1528127269322-539ba94370ed",
+    "destination": "Тур по Вьетнаму",
+    "days": 7,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      2
+    ],
+    "features": [
+      "Экскурсия в бухту Халонг",
+      "Дегустация уличной еды",
+      "Посещение храма литературы"
+    ],
+    "price": 160000,
+    "rating": 4.5,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "9/1/2025",
+    "dateExit": "9/8/2025"
+  },
+  {
+    "city": "Дели, Индия",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5",
+    "destination": "Золотой треугольник",
+    "days": 8,
+    "category": [
+      4,
+      6
+    ],
+    "info": [
+      1,
+      2
+    ],
+    "features": [
+      "Экскурсия в Тадж-Махал",
+      "Посещение Красного форта",
+      "Дегустация индийской кухни"
+    ],
+    "price": 150000,
+    "rating": 4.4,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "10/10/2025",
+    "dateExit": "10/18/2025"
+  },
+  {
+    "city": "Катманду, Непал",
+    "imageUrl": "https://images.unsplash.com/photo-1566438480900-0609be27a4be",
+    "destination": "Треккинг в Гималаях",
+    "days": 10,
+    "category": [
+      3,
+      4
+    ],
+    "info": [
+      2,
+      4
+    ],
+    "features": [
+      "Поход к базовому лагерю Эвереста",
+      "Экскурсия в храм Сваямбунатх",
+      "Проживание в горных лоджах"
+    ],
+    "price": 200000,
+    "rating": 4.7,
+    "adultsCount": 3,
+    "childrenCount": 0,
+    "dateEntry": "4/5/2025",
+    "dateExit": "4/15/2025"
+  },
+  {
+    "city": "Дубай, ОАЭ",
+    "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+    "destination": "Роскошный отдых",
+    "days": 5,
+    "category": [
+      4,
+      5
+    ],
+    "info": [
+      5
+    ],
+    "features": [
+      "Проживание в Бурдж-Халифе",
+      "Шоппинг в Dubai Mall",
+      "Экскурсия в пустыню"
+    ],
+    "price": 250000,
+    "rating": 4.8,
+    "adultsCount": 2,
+    "childrenCount": 0,
+    "dateEntry": "11/15/2025",
+    "dateExit": "11/20/2025"
   }
 ]

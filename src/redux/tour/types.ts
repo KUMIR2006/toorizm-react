@@ -1,4 +1,5 @@
 export type Tour = {
+  id: number;
   city: string;
   imageUrl: string;
   destination: string;
