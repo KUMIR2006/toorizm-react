@@ -2,10 +2,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { fetchTours } from './asyncActions';
 
 import { Tour, TourSliceState, Status } from './types';
- 
-
-
-
 
 const initialState: TourSliceState = {
   items: [],

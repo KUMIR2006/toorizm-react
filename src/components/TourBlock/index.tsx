@@ -1,12 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Tour } from '../../redux/tour/types'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Tour } from '../../redux/tour/types';
+import { formatNumber } from '../../utils/formatNumber';
 
-const TourBlock: React.FC<Tour> = ({  imageUrl, destination, days, info, features, price, rating, category, adultsCount, childrenCount}) => {
+const TourBlock: React.FC<Tour> = ({
+  id,
+  city,
+  imageUrl,
+  destination,
+  days,
+  category,
+  info,
+  features,
+  price,
+  rating,
+  adultsCount,
+  childrenCount,
+  dateEntry,
+  dateExit,
+}) => {
   return (
-    <Link  to={`/tour/${destination}`}>
-    <div className="tour">
-      
+    <Link to={`/tour/${destination}`}>
+      <div className="tour">
         <img className="tour__img" src={imageUrl} alt="" />
 
         <div className="tour__title">
@@ -17,7 +32,9 @@ const TourBlock: React.FC<Tour> = ({  imageUrl, destination, days, info, feature
               <div>{rating}</div>
             </div>
           </div>
-          <p className="tour__title--duration">{days} Дней {days-1} Ночей</p>
+          <p className="tour__title--duration">
+            {days} Дней {days - 1} Ночей
+          </p>
         </div>
 
         <ul className="tour__info">
@@ -38,26 +55,26 @@ const TourBlock: React.FC<Tour> = ({  imageUrl, destination, days, info, feature
             <div className="p">Активности</div>
           </li>
         </ul>
-        
+
         <ul className="tour__features">
           <li>{features[0]}</li>
           <li>{features[1]}</li>
           <li>{features[2]}</li>
         </ul>
 
-
         <div className="tour__price">
-          
-          <p>₽{price}</p>
-          <div className="tour__price--desc">
-            За человека
-          </div>
+          <p>₽{formatNumber(price)}</p>
+          <div className="tour__price--desc">За человека</div>
         </div>
-
-      
-    </div>
+      </div>
     </Link>
-  )
-}
+  );
+};
 
-export default TourBlock
+export default TourBlock;
+function dispatch(arg0: {
+  payload: import('../../redux/cart/types').CartItem;
+  type: 'cart/addItem';
+}) {
+  throw new Error('Function not implemented.');
+}

@@ -32,22 +32,22 @@ export type Tour = {
   //   "rating": 4.7,
   //   "adultsCount": 2,
   //   "childrenCount": 1
-}
+};
 
 export enum Status {
   LOADING = 'loading',
   SUCCESS = 'success',
-  ERROR = 'error'
+  ERROR = 'error',
 }
 
 export type SearchTourParams = {
-  adults: string; 
-  children: string; 
-  category: string; 
+  adults: string;
+  children: string;
+  category: string;
   search: string;
-}
+};
 
-export interface TourSliceState{
+export interface TourSliceState {
   items: Tour[];
   status: Status;
 }

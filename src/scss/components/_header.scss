@@ -15,6 +15,7 @@
     font-weight: 700;
     font-size: 35px;
     color: white;
+    cursor: pointer;
   }
 
   &__navigation {
@@ -26,12 +27,15 @@
     ul {
       display: flex;
       align-items: center;
+
       .active {
         border-bottom: 1.11px solid rgba(255, 255, 255, 1);
       }
       li {
         padding: 9px;
         margin-right: 27px;
+
+        color: rgb(238, 238, 238);
       }
     }
     &--signup {

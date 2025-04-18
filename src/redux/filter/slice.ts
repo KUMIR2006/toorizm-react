@@ -4,12 +4,12 @@ import { FilterSliceState } from './types';
 const initialState: FilterSliceState = {
   searchValue: '',
   categoryId: null,
-  checkIn:null,
-  checkOut:null,
+  checkIn: null,
+  checkOut: null,
   childrenCount: 0,
   adultsCount: 0,
+  changed: false,
 };
-
 
 const filterSlice = createSlice({
   name: 'filter',
@@ -33,16 +33,22 @@ const filterSlice = createSlice({
     setAdultsCount(state, action: PayloadAction<number>) {
       state.adultsCount = action.payload;
     },
+    setChanged(state) {
+      state.changed = true;
+    },
+    resetState: () => initialState,
   },
 });
 
-export const { 
+export const {
   setSearchValue,
   setCategoryId,
   setCheckIn,
   setCheckOut,
   setChildrenCount,
-  setAdultsCount
+  setAdultsCount,
+  resetState,
+  setChanged,
 } = filterSlice.actions;
 
 export default filterSlice.reducer;
