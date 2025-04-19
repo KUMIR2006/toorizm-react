@@ -9,6 +9,7 @@ import { clearItems } from '../redux/cart/slice';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { formatNumber } from '../utils/formatNumber';
+import { setNavId } from '../redux/navigation/slice';
 
 const Cart: React.FC = () => {
   const dispatch = useDispatch();
@@ -26,6 +27,9 @@ const Cart: React.FC = () => {
     return <CartEmpty />;
   }
 
+  const onClickBack = () => {
+    dispatch(setNavId(1));
+  };
   return (
     <div className="wrapper">
       <Header />
@@ -84,7 +88,10 @@ const Cart: React.FC = () => {
               </span>
             </div>
             <div className="cart__bottom-buttons">
-              <Link to="/" className="button button--outline button--add go-back-btn">
+              <Link
+                to="/tours"
+                onClick={() => onClickBack()}
+                className="button button--outline button--add go-back-btn">
                 <svg
                   width="8"
                   height="14"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Outlet } from 'react-router';
 import { selectFilter } from '../redux/filter/selectors';
 import { useNavigate } from 'react-router-dom';
@@ -8,8 +8,10 @@ import Categories from '../components/Categories';
 import Filter from '../components/Filter';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import { setNavId } from '../redux/navigation/slice';
 
 const MainLayout: React.FC = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const { searchValue, categoryId, adultsCount, childrenCount, checkIn, checkOut, changed } =
     useSelector(selectFilter);

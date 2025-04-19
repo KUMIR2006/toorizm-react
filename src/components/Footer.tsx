@@ -7,6 +7,8 @@ import { selectNavigation } from '../redux/navigation/selectors';
 import { setNavId } from '../redux/navigation/slice';
 import { pages } from './Header';
 
+const socials: Array<string> = ['facebook', 'twitter', 'instagram', 'youtube'];
+
 const Footer: React.FC = () => {
   const dispatch = useDispatch();
   const { navigationId } = useSelector(selectNavigation);
@@ -47,7 +49,9 @@ const Footer: React.FC = () => {
           alt=""
         />
         <div className="footer__dev">
-          <div className="footer__dev--button">GitHub</div>
+          <a href="https://github.com/KUMIR2006/toorizm-react">
+            <div className="footer__dev--button">GitHub</div>
+          </a>
           <div className="footer__dev--text">© 1997-2021 Netflix, Inc. i-062d573a0ee099242</div>
         </div>
         <ul className="footer__links">
@@ -63,18 +67,13 @@ const Footer: React.FC = () => {
           ))}
         </ul>
         <ul className="footer__social">
-          <li>
-            <img src="/img/socials/facebook.svg" alt="facebook" />
-          </li>
-          <li>
-            <img src="/img/socials/twitter.svg" alt="twitter" />
-          </li>
-          <li>
-            <img src="/img/socials/instagram.svg" alt="instagram" />
-          </li>
-          <li>
-            <img src="/img/socials/youtube.svg" alt="youtube" />
-          </li>
+          {socials.map((social, i) => (
+            <li key={i}>
+              <a href="https://github.com/KUMIR2006/toorizm-react">
+                <img src={`/img/socials/${social}.svg`} alt={social} />
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

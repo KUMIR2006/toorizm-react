@@ -31,10 +31,11 @@ const Header: React.FC = () => {
   };
 
   const onClickCategory = (i: number) => {
-    dispatch(setNavId(i));
     if (i === 0) {
       onClickReset();
+      return;
     }
+    dispatch(setNavId(i));
   };
 
   return (
@@ -44,7 +45,7 @@ const Header: React.FC = () => {
       </div>
 
       <div className="header__navigation">
-        <ul>
+        <ul key={navigationId}>
           {pages.map((page, i) => (
             <Link to={page.path}>
               <li

@@ -1,11 +1,18 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 
 import { Link } from 'react-router-dom';
 import cartEmptyImg from '../assets/img/empty-cart.png';
+import { setNavId } from '../redux/navigation/slice';
 import Footer from './Footer';
 import Header from './Header';
 
-const CartEmpty = () => {
+const CartEmpty: React.FC = () => {
+  const dispatch = useDispatch();
+
+  const onClickBack = () => {
+    dispatch(setNavId(1));
+  };
   return (
     <div className="wrapper">
       <Header />
@@ -19,7 +26,10 @@ const CartEmpty = () => {
           Для того, чтобы выбрать подходящий для вас вариант, перейди на страницу с турами.
         </p>
         <img src={cartEmptyImg} alt="Empty cart" />
-        <Link to="/" className="button button--black go-back-btn">
+        <Link
+          to="/tours"
+          onClick={() => onClickBack()}
+          className="button button--black go-back-btn">
           <svg
             width="8"
             height="14"

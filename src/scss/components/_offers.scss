@@ -85,6 +85,11 @@
         line-height: 100%;
         font-size: 15px;
         color: white;
+        transition: all 0.2s ease-in-out;
+        &:hover,
+        &:active {
+          background: rgb(26, 60, 133);
+        }
       }
     }
   }

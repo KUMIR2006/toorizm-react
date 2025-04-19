@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { selectFilter } from '../redux/filter/selectors';
 import { useDispatch } from 'react-redux';
 import { setCategoryId } from '../redux/filter/slice';
+import { setNavId } from '../redux/navigation/slice';
 
 export interface categoriesListType {
   ruName: string;
@@ -80,6 +81,7 @@ const Categories: React.FC = () => {
   const { categoryId } = useSelector(selectFilter);
 
   const onClickChangeActive = (id: number) => {
+    dispatch(setNavId(1));
     dispatch(setCategoryId(id));
   };
 

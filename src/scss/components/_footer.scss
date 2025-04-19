@@ -27,12 +27,23 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: rgba(128, 128, 128, 1);
       cursor: pointer;
       width: 115px;
       height: 40px;
       border: 1.11px solid rgba(128, 128, 128, 1);
       padding-top: 11px 16px;
       margin-left: 10px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: rgb(185, 184, 184);
+        border: 1.11px solid rgb(185, 184, 184);
+      }
+      &:active {
+        color: rgb(85, 85, 85);
+        border: 1.11px solid rgb(85, 85, 85);
+      }
     }
     &--text {
       font-weight: 300;
@@ -61,8 +72,8 @@
     font-weight: 400;
     font-size: 14.39px;
     line-height: 100%;
-
     width: 200px;
+    transition: all 0.2s ease-in-out;
     a:link {
       color: rgba(128, 128, 128, 1);
     }
