@@ -1,18 +1,24 @@
 import React from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router';
+import toast, { Toaster } from 'react-hot-toast';
+import parse from 'html-react-parser';
+
 import { Tour } from '../redux/tour/types';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { categoriesList } from '../components/Categories';
-import parse from 'html-react-parser';
-import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/cart/slice';
 import { formatNumber } from '../utils/formatNumber';
+import { selectAuth } from '../redux/auth/selectors';
 
 const FullPizza: React.FC = () => {
   const dispatch = useDispatch();
   const { destination } = useParams();
+  const { authStatus } = useSelector(selectAuth);
+  const navigate = useNavigate();
+
   const [tourData, setTourData] = React.useState<Tour>();
 
   React.useEffect(() => {
@@ -40,11 +46,18 @@ const FullPizza: React.FC = () => {
   }
 
   const onClickAdd = () => {
-    dispatch(addItem(tourData));
+    if (authStatus) {
+      toast.success('Этот тур добавлен в избранное');
+      dispatch(addItem(tourData));
+    } else {
+      toast.error('Войдите в аккаунт, чтобы добавлять туры в избранное');
+      navigate('/auth/sign');
+    }
   };
 
   return (
     <div className="wrapper">
+      <Toaster />
       <Header />
       <div className="fullTour">
         <div className="fullTour__top">

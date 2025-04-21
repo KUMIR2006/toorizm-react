@@ -1,10 +1,12 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
+
 import { selectNavigation } from '../redux/navigation/selectors';
 import { setNavId } from '../redux/navigation/slice';
 import { resetState, setChanged } from '../redux/filter/slice';
 import { selectFilter } from '../redux/filter/selectors';
+import { selectAuth } from '../redux/auth/selectors';
 export const pages = [
   { name: 'Главная', path: '/' },
   { name: 'Туры', path: '/tours' },
@@ -15,6 +17,7 @@ export const pages = [
 const Header: React.FC = () => {
   const dispatch = useDispatch();
   const { navigationId } = useSelector(selectNavigation);
+  const { authStatus } = useSelector(selectAuth);
   const { changed } = useSelector(selectFilter);
   const navigate = useNavigate();
 
@@ -46,16 +49,16 @@ const Header: React.FC = () => {
       </div>
 
       <div className="header__navigation">
-        <ul key={navigationId}>
+        <ul key={`${navigationId} + ${authStatus}`}>
           {pages.map((page, i) => (
-            <Link to={page.path}>
+            <Link to={i !== 4 ? page.path : authStatus === true ? '/auth/profile' : page.path}>
               <li
                 key={i}
                 onClick={() => onClickCategory(i)}
                 className={` ${navigationId === i ? 'active' : ''} ${
                   i === 4 ? 'header__navigation--signup' : ''
                 } `}>
-                {page.name}
+                {i !== 4 ? page.name : authStatus === true ? 'Профиль' : page.name}
               </li>
             </Link>
           ))}

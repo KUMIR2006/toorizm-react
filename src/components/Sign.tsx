@@ -23,13 +23,11 @@ const Sign: React.FC = () => {
 
   const changeAuthSlice = async (e: React.FormEvent) => {
     e.preventDefault();
-    await dispatch(
-      changeEmail(email),
-      changePassword(password),
-      changeName(firstName),
-      changeSurname(lastName),
-      changeAuthStatus(),
-    );
+    await dispatch(changeEmail(email));
+    await dispatch(changePassword(password));
+    await dispatch(changeName(firstName));
+    await dispatch(changeSurname(lastName));
+    await dispatch(changeAuthStatus());
     toast.success('Вы успешно зарегистрированы');
     navigate('/auth/profile');
   };
