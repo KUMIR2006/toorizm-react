@@ -10,6 +10,7 @@ export const pages = [
   { name: 'Туры', path: '/tours' },
   { name: 'Избранное', path: '/cart' },
   { name: 'О нас', path: '/about' },
+  { name: 'Регистрация', path: '/auth/sign' },
 ];
 const Header: React.FC = () => {
   const dispatch = useDispatch();
@@ -51,15 +52,14 @@ const Header: React.FC = () => {
               <li
                 key={i}
                 onClick={() => onClickCategory(i)}
-                className={navigationId === i ? 'active' : ''}>
+                className={` ${navigationId === i ? 'active' : ''} ${
+                  i === 4 ? 'header__navigation--signup' : ''
+                } `}>
                 {page.name}
               </li>
             </Link>
           ))}
         </ul>
-        <a className="header__navigation--signup">
-          <p>Регистрация</p>
-        </a>
       </div>
     </div>
   );

@@ -256,7 +256,6 @@
         cursor: pointer;
         span {
           color: rgb(38, 89, 195);
-          font-weight: 500;
           font-weight: 600;
           transition: all 0.4s ease-in-out;
         }
@@ -274,7 +273,7 @@
 
   &--empty {
     margin: 80px auto;
-    width: 620px;
+    width: 630px;
     text-align: center;
 
     h2 {

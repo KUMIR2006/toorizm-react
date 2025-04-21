@@ -3,6 +3,7 @@ import filter from './filter/slice';
 import tour from './tour/slice';
 import cart from './cart/slice';
 import navigation from './navigation/slice';
+import auth from './auth/slice';
 import { useDispatch } from 'react-redux';
 
 export const store = configureStore({
@@ -11,6 +12,7 @@ export const store = configureStore({
     tour,
     cart,
     navigation,
+    auth,
   },
 });
 

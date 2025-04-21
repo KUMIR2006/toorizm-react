@@ -1,0 +1,102 @@
+.auth-container {
+  max-width: 400px;
+  margin: 250px auto 250px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 17px 0px rgba(158, 158, 158, 0.4);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 22px;
+  }
+}
+
+.sign-container {
+  max-width: 400px;
+  margin: 150px auto 200px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 17px 0px rgba(158, 158, 158, 0.4);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 22px;
+  }
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+
+  input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      border-color: rgb(38, 89, 195);
+    }
+  }
+}
+
+.auth-button {
+  align-self: center;
+  width: 75%;
+  padding: 0.8rem;
+  background-color: rgb(38, 89, 195);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: rgb(26, 60, 133);
+  }
+  &:active {
+    background-color: rgb(71, 112, 201);
+  }
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+
+  a {
+    color: rgb(38, 89, 195);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.forgot-password {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: right;
+  font-size: 0.8rem;
+}
