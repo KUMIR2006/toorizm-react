@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import { selectAuth } from '../redux/auth/selectors';
 import { selectFilter } from '../redux/filter/selectors';
 import { resetState, setChanged } from '../redux/filter/slice';
 import { selectNavigation } from '../redux/navigation/selectors';
@@ -12,6 +13,7 @@ const socials: Array<string> = ['facebook', 'twitter', 'instagram', 'youtube'];
 const Footer: React.FC = () => {
   const dispatch = useDispatch();
   const { navigationId } = useSelector(selectNavigation);
+  const { authStatus } = useSelector(selectAuth);
   const { changed } = useSelector(selectFilter);
   const navigate = useNavigate();
 
@@ -54,14 +56,14 @@ const Footer: React.FC = () => {
           </a>
           <div className="footer__dev--text">© 1997-2021 Netflix, Inc. i-062d573a0ee099242</div>
         </div>
-        <ul className="footer__links">
+        <ul key={`${navigationId} + ${authStatus}`} className="footer__links">
           {pages.map((page, i) => (
-            <Link to={page.path}>
+            <Link to={i !== 4 ? page.path : authStatus === true ? '/auth/profile' : page.path}>
               <li
                 key={i}
                 onClick={() => onClickCategory(i)}
                 className={navigationId === i ? 'active' : ''}>
-                {page.name}
+                {i !== 4 ? page.name : authStatus === true ? 'Профиль' : page.name}
               </li>
             </Link>
           ))}

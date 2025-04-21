@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Tours from './pages/Tours';
 import './scss/app.scss';
 import Profile from './components/Profile';
+import About from './pages/About';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </Route>
       <Route path="tour/:destination" element={<FullTour />} />
       <Route path="cart" element={<Cart />} />
+      <Route path="about" element={<About />} />
     </Routes>
   );
 }
