@@ -1,7 +1,6 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { selectFilter } from '../redux/filter/selectors';
 import { setNavId } from '../redux/navigation/slice';
 import CheckIn from './CheckIn';
 import Search from './Search';

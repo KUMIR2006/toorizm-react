@@ -72,9 +72,3 @@ const TourBlock: React.FC<Tour> = ({
 };
 
 export default TourBlock;
-function dispatch(arg0: {
-  payload: import('../../redux/cart/types').CartItem;
-  type: 'cart/addItem';
-}) {
-  throw new Error('Function not implemented.');
-}

@@ -1,13 +1,11 @@
 import React from 'react';
 import debounce from 'lodash.debounce';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectFilter } from '../../redux/filter/selectors';
+import { useDispatch } from 'react-redux';
 import { setSearchValue } from '../../redux/filter/slice';
 import { setNavId } from '../../redux/navigation/slice';
 
 const Search: React.FC = () => {
   const dispatch = useDispatch();
-  const { searchValue } = useSelector(selectFilter);
 
   const [value, setValue] = React.useState('');
   const inputRef = React.useRef<HTMLInputElement>(null);
