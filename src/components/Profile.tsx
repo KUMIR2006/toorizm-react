@@ -38,7 +38,7 @@ const Sign: React.FC = () => {
         </div>
         <div className="form-group">
           <label htmlFor="password">Пароль</label>
-          <input type="text" id="password" value={authPassword} disabled />
+          <input type="password" id="password" value={authPassword} disabled />
         </div>
         <button onClick={() => OnClickUnauth()} className="auth-button">
           Выйти

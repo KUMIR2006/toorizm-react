@@ -6,7 +6,7 @@ const initialState: authType = {
   authPassword: '1234',
   authName: 'Mirzobek',
   authSurname: 'Kurbanov',
-  authStatus: false,
+  authStatus: true,
 };
 
 const authSlice = createSlice({

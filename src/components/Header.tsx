@@ -45,7 +45,15 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div onClick={() => onClickReset()} className="header__logo">
-        <p>Via Appia.</p>
+        {/* <img
+          className="footer__logo"
+          src="/img/logo.png"
+          width={45}
+          height={45}
+          style={{}}
+          alt=""
+        /> */}
+        <p>Toorizm.</p>
       </div>
 
       <div className="header__navigation">

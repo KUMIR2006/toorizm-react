@@ -1,4 +1,5 @@
 module.exports = {
+  devtool: false,
   module: {
     rules: [
       {
@@ -7,6 +8,12 @@ module.exports = {
         options: {
           minimize: true,
         },
+      },
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
+        exclude: [/node_modules\/react-day-picker/],
       },
     ],
   },

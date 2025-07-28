@@ -39,17 +39,17 @@ const Footer: React.FC = () => {
   return (
     <div className="footer">
       <div className="container">
-        {/* <div className="footer__logo" onClick={() => onClickReset()}>
-          Via Appia.
-        </div> */}
-        <img
+        <div className="footer__logo" onClick={() => onClickReset()}>
+          Toorizm.
+        </div>
+        {/* <img
           onClick={() => onClickReset()}
           className="footer__logo"
           src="/img/logo.png"
           width={100}
           height={100}
           alt=""
-        />
+        /> */}
         <div className="footer__dev">
           <a href="https://github.com/KUMIR2006/toorizm-react">
             <div className="footer__dev--button">GitHub</div>
